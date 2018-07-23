@@ -1,0 +1,55 @@
+{#
+
+ # The site layout template
+ # ------------------------
+ #
+ # This layout template extends the _layouts/base.html layout, and defines the
+ # main site layout: the header, footer, and main content area.
+ #
+ # It’s never accessed directly. Instead it is extended by all of our main site
+ # templates.
+ #
+ # This template defines one block region, `main`, which should be extended by
+ # child templates to define the main contents for the page.
+-#}
+
+
+
+
+
+
+{% block body %}
+	<div id="bar">
+		<div class="flex">
+			<div class="g1-flex4 g2-flex6 g3-flex12">dfgdsgsdg
+				<div id="social">
+					<a href="https://dribbble.com/" data-icon="dribbble" title="Happy Lager on Dribbble"></a>
+					<a href="https://twitter.com/" data-icon="twitter" title="Happy Lager on Twitter"></a>
+					<a href="https://www.facebook.com/" data-icon="facebook" title="Happy Lager on Facebook"></a>
+				</div>
+				<div id="search">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header id="header">
+		<div class="flex">
+			<div class="g1-flex4 g2-flex6 g3-flex12">
+
+				<nav>
+					<ul>
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main id="main" role="main">
+		{% block main %}{% endblock %}
+	</main>
+
+
+{% endblock %}
